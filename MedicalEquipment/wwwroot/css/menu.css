@@ -1,0 +1,204 @@
+﻿html {
+    font-family: "Segoe UI", arial;
+    font-size: 16px;
+    background: #111;
+}
+
+body {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.feather {
+    width: 20px;
+    height: 20px;
+    stroke: #333;
+}
+
+    .feather.feather-menu {
+        width: 24px;
+        height: 24px;
+    }
+
+    .feather.feather-chevron-down {
+        vertical-align: middle;
+    }
+
+.container {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.btn-toggle-menu,
+.menu-right > li > a,
+.menu-dropdown > li > a {
+    border: 1px dashed transparent;
+}
+
+    .btn-toggle-menu:active, .btn-toggle-menu:focus,
+    .menu-right > li > a:active,
+    .menu-right > li > a:focus,
+    .menu-dropdown > li > a:active,
+    .menu-dropdown > li > a:focus {
+        border: 1px dashed #333;
+        outline: 0;
+    }
+
+.btn-toggle-menu {
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#navbar {
+    background-color: #fff;
+    padding: 12px 0 9px;
+}
+
+.nav-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-container {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 0;
+    display: none;
+}
+
+.show {
+    display: block !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.mobile-nav-head {
+    text-align: center;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 12px 15px;
+    background-color: white;
+}
+
+.menu-dropdown {
+    margin: 0;
+    padding: 0;
+}
+
+    .menu-dropdown li {
+        list-style-type: none;
+        position: relative;
+    }
+
+        .menu-dropdown li:hover > a + .sub-menu {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .menu-dropdown li a {
+            display: block;
+            background-color: #fff;
+            text-decoration: none;
+            color: #333;
+            padding: 12px 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+            .menu-dropdown li a + ul.sub-menu {
+                visibility: hidden;
+                opacity: 0;
+                margin: 0;
+                padding: 0;
+            }
+
+                .menu-dropdown li a + ul.sub-menu li a {
+                    padding-left: 25px;
+                }
+
+.menu-right {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: row;
+}
+
+    .menu-right li {
+        list-style-type: none;
+    }
+
+        .menu-right li a {
+            color: #333;
+            display: block;
+            padding: 2px 6px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+.btn-signin {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    #navbar {
+        padding: 7px 0 5px;
+    }
+
+    .btn-toggle-menu,
+    .mobile-nav-head {
+        display: none;
+    }
+
+    .dropdown-container {
+        position: inherit;
+        display: block;
+    }
+
+    .menu-dropdown {
+        display: flex;
+        margin: 0 10px;
+    }
+
+        .menu-dropdown li a {
+            padding: 8px 15px;
+            border-bottom: 1px solid transparent;
+        }
+
+    .btn-signin {
+        display: block;
+    }
+
+    .menu-right > li > a {
+        padding: 6px 15px;
+    }
+
+    ul.sub-menu {
+        position: absolute;
+        top: calc(100% + 5px);
+        border: 1px solid #eee;
+        transition: 0.2s;
+    }
+
+        ul.sub-menu li {
+            padding: 0;
+        }
+
+            ul.sub-menu li a {
+                padding: 12px 30px !important;
+                min-width: 200px;
+                border-bottom: 1px solid #eee;
+            }
+
+                ul.sub-menu li a:hover {
+                    border-bottom: 1px solid transparent;
+                    background-color: #f9f9f9;
+                }
+}
