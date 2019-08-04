@@ -1,0 +1,54 @@
+﻿@model IEnumerable<MedicalEquipment.Web.Models.About>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+    <h2>نمایش اطلاعات درباره ما</h2>
+
+    <p>
+        <a asp-action="Create" class="btn btn-lg btn-primary">افزودن درباره ما جدید</a>
+    </p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Summary)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Describtion)
+            </th>
+            <th>عملیات</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @if (item.Summary.Length < 50)
+                {
+                    @item.Summary
+                }
+                else
+                {
+                    <a data-toggle='tooltip' data-placement='top' title='@item.Summary'>  @item.Summary.Substring(0, 50)  ... </a>
+                }
+            </td>
+            <td>
+                @if (item.Describtion.Length < 50)
+                {
+                    @item.Describtion
+                }
+                else
+                {
+                    <a data-toggle='tooltip' data-placement='top' title='@item.Describtion'>  @item.Describtion.Substring(0, 50)  ... </a>
+                }
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.About_Id" class="btn btn-success">ویرایش</a> |
+                <a asp-action="Delete" asp-route-id="@item.About_Id" class="btn btn-danger">حذف</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

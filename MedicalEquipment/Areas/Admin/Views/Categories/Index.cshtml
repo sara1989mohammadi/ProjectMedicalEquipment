@@ -1,0 +1,37 @@
+﻿@model IEnumerable<MedicalEquipment.Web.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<h2>لیست دسته بندی های ثبت شده</h2>
+
+
+<p>
+    <a asp-action="Create" class="btn btn-lg btn-primary">افزودن دسته بندی جدید</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryTitle)
+            </th>
+            <th>عملیات</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryTitle)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Category_Id" class="btn btn-success">ویرایش</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Category_Id" class="btn btn-danger">حذف</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

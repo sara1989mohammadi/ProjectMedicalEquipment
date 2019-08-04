@@ -1,0 +1,46 @@
+﻿@model MedicalEquipment.Web.Models.Service
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<hr />
+<div class="box box-warning">
+    <div class="box-header with-border">
+        <h3 class="box-title">ویرایش سرویس</h3>
+    </div>
+    <div class="box-body">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Service_Id" />
+            <div class="form-group">
+                <label asp-for="Tittle" class="control-label"></label>
+                <input asp-for="Tittle" class="form-control" />
+                <span asp-validation-for="Tittle" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <input asp-for="Description" class="form-control" />
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageName" class="control-label"></label>
+                <input asp-for="ImageName" class="form-control" />
+                <span asp-validation-for="ImageName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lang_Id" class="control-label"></label>
+                <select asp-for="Lang_Id" class="form-control" asp-items="ViewBag.Lang_Id"></select>
+                <span asp-validation-for="Lang_Id" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ذخیره تغییرات" class="btn btn-success" />  |
+                <a asp-action="Index">برگشت به صفحه اصلی</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+

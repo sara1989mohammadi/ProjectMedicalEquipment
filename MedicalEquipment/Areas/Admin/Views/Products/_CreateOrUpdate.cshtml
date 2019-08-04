@@ -1,0 +1,28 @@
+﻿@*@model CostViewModel
+
+<div class="col-md-12 row">
+    <div class="form-group col-md-4">
+        <label asp-for="CostTitle"></label>
+        <input asp-for="CostTitle" class="form-control" placeholder="عنوان هزینه را وارد کنید">
+        <span asp-validation-for="CostTitle" class="text-danger"></span>
+    </div>
+    <div class="form-group col-md-4">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" data-toggle="input-mask" placeholder="مبلغ هزینه را وارد کنید" data-mask-format="000,000,000,000" data-reverse="true">
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group col-md-4">
+        <label asp-for="CostDate"></label>
+        <input asp-for="CostDate" readonly class="form-control" placeholder="تاریخ پرداخت هزینه را وارد کنید">
+        <span asp-validation-for="CostDate" class="text-danger"></span>
+    </div>
+
+
+</div>
+<script>
+    $("#Price").blur(function () {
+        var price = $("#Price").val();
+        if (price == '')
+            document.getElementById("Price").value = "0";
+    })
+</script>*@

@@ -1,0 +1,74 @@
+﻿@model IEnumerable<MedicalEquipment.Web.Models.Contact>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<h2>لیست تماس های ثبت شده</h2>
+
+
+<p>
+    <a asp-action="Create" class="btn btn-lg btn-primary">افزودن تماس جدید</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Mobil)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TelegramId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InstagrmId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Language)
+            </th>
+            <th>عملیات</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Mobil)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Email)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TelegramId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InstagrmId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Language.LanguageTitle)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Contact_Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Contact_Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Contact_Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

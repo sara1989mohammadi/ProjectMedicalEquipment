@@ -1,0 +1,55 @@
+﻿@model IEnumerable<MedicalEquipment.Web.Models.Service>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<h2>لیست سرویس های ثبت شده</h2>
+
+
+<p>
+    <a asp-action="Create" class="btn btn-lg btn-primary">افزودن سرویس جدید</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Tittle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ImageName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Language)
+            </th>
+            <th>عملیات</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tittle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ImageName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Language.LanguageTitle)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Service_Id" class="btn btn-success">ویرایش</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Service_Id" class="btn btn-danger">حذف</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

@@ -1,0 +1,31 @@
+﻿@model MedicalEquipment.Web.Models.ServicesType
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ServicesType</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tittle)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Tittle)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Service)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Service.Description)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ServicesType_Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

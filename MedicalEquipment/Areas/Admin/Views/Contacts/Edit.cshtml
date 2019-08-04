@@ -1,0 +1,60 @@
+﻿@model MedicalEquipment.Web.Models.Contact
+
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+
+<hr />
+<div class="box box-warning">
+    <div class="box-header with-border">
+        <h3 class="box-title">ویرایش دسته بندی</h3>
+    </div>
+    <div class="box-body">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Contact_Id" />
+            <div class="form-group">
+                <label asp-for="Phone" class="control-label"></label>
+                <input asp-for="Phone" class="form-control" />
+                <span asp-validation-for="Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Mobil" class="control-label"></label>
+                <input asp-for="Mobil" class="form-control" />
+                <span asp-validation-for="Mobil" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TelegramId" class="control-label"></label>
+                <input asp-for="TelegramId" class="form-control" />
+                <span asp-validation-for="TelegramId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InstagrmId" class="control-label"></label>
+                <input asp-for="InstagrmId" class="form-control" />
+                <span asp-validation-for="InstagrmId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Address" class="control-label"></label>
+                <input asp-for="Address" class="form-control" />
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LangID" class="control-label"></label>
+                <select asp-for="LangID" class="form-control" asp-items="ViewBag.LangID"></select>
+                <span asp-validation-for="LangID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ذخیره تغییرات" class="btn btn-success" />  |
+                <a asp-action="Index">برگشت به صفحه اصلی</a>
+            </div>
+        </form>
+    </div>
+</div>
+

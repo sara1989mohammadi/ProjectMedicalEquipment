@@ -1,0 +1,35 @@
+﻿@model MedicalEquipment.Web.Models.About
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+
+<hr />
+<div class="box box-warning">
+    <div class="box-header with-border">
+        <h3 class="box-title">ثبت درباره ما</h3>
+    </div>
+    <div class="box-body">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Summary" class="control-label"></label>
+                <textarea asp-for="Summary" class="form-control" rows="3" placeholder="خلاصه"></textarea>
+
+                <span asp-validation-for="Summary" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Describtion" class="control-label"></label>
+                <textarea asp-for="Describtion" class="form-control" rows="10" placeholder="متن"></textarea>
+                <span asp-validation-for="Describtion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ذخیره" class="btn btn-success" />  |
+                <a asp-action="Index">برگشت به صفحه اصلی</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+

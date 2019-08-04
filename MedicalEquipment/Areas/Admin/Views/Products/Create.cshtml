@@ -1,0 +1,62 @@
+﻿@model MedicalEquipment.Web.Models.Product
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Admin.cshtml";
+}
+<link href="~/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+
+<hr />
+<div class="box box-warning">
+    <div class="box-header with-border">
+        <h3 class="box-title">ثبت کالا</h3>
+    </div>
+    <div class="box-body">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="ProductName" class="control-label"></label>
+                <input asp-for="ProductName" class="form-control" placeholder="نام کالا" />
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description" class="control-label"></label>
+                <textarea asp-for="Description" class="form-control" rows="10" placeholder="متن"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageName" class="control-label"></label>
+
+                <input type="file" name="imgProduct" class="form-control" />
+                <span asp-validation-for="ImageName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Price" class="control-label"></label>
+                <input asp-for="Price" class="form-control" placeholder="قیمت" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="Status" /> @Html.DisplayNameFor(model => model.Status)
+                    </label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="Lang_Id" class="control-label"></label>
+                <select asp-for="Lang_Id" class="form-control" asp-items="ViewBag.Lang_Id"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Category_Id" class="control-label"></label>
+                <select asp-for="Category_Id" class="form-control" asp-items="ViewBag.Category_Id"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ذخیره" class="btn btn-success" />  |
+                <a asp-action="Index">برگشت به صفحه اصلی</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
