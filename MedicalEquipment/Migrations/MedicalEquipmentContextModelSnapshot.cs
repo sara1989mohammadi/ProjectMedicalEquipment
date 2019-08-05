@@ -164,6 +164,8 @@ namespace MedicalEquipment.Web.Migrations
 
                     b.Property<int>("Price");
 
+                    b.Property<bool>("ProductForDisplay");
+
                     b.Property<string>("ProductName")
                         .IsRequired()
                         .HasMaxLength(300);

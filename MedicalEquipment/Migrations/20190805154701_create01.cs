@@ -123,6 +123,7 @@ namespace MedicalEquipment.Web.Migrations
                     Price = table.Column<int>(nullable: false),
                     Status = table.Column<bool>(nullable: false),
                     SpecialProduct = table.Column<bool>(nullable: false),
+                    ProductForDisplay = table.Column<bool>(nullable: false),
                     Lang_Id = table.Column<int>(nullable: false),
                     Category_Id = table.Column<int>(nullable: false)
                 },

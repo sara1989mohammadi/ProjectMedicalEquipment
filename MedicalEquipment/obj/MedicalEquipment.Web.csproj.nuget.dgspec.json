@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Seemorgh-132\\Source\\Repos\\sara1989mohammadi\\ProjectMedicalEquipment\\MedicalEquipment\\MedicalEquipment.Web.csproj": {}
+    "C:\\Users\\Sara\\source\\repos\\sara1989mohammadi\\ProjectMedicalEquipment\\ProjectMedicalEquipment\\MedicalEquipment\\MedicalEquipment.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Seemorgh-132\\Source\\Repos\\sara1989mohammadi\\ProjectMedicalEquipment\\MedicalEquipment\\MedicalEquipment.Web.csproj": {
+    "C:\\Users\\Sara\\source\\repos\\sara1989mohammadi\\ProjectMedicalEquipment\\ProjectMedicalEquipment\\MedicalEquipment\\MedicalEquipment.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Seemorgh-132\\Source\\Repos\\sara1989mohammadi\\ProjectMedicalEquipment\\MedicalEquipment\\MedicalEquipment.Web.csproj",
+        "projectUniqueName": "C:\\Users\\Sara\\source\\repos\\sara1989mohammadi\\ProjectMedicalEquipment\\ProjectMedicalEquipment\\MedicalEquipment\\MedicalEquipment.Web.csproj",
         "projectName": "MedicalEquipment.Web",
-        "projectPath": "C:\\Users\\Seemorgh-132\\Source\\Repos\\sara1989mohammadi\\ProjectMedicalEquipment\\MedicalEquipment\\MedicalEquipment.Web.csproj",
-        "packagesPath": "C:\\Users\\Seemorgh-132\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Seemorgh-132\\Source\\Repos\\sara1989mohammadi\\ProjectMedicalEquipment\\MedicalEquipment\\obj\\",
+        "projectPath": "C:\\Users\\Sara\\source\\repos\\sara1989mohammadi\\ProjectMedicalEquipment\\ProjectMedicalEquipment\\MedicalEquipment\\MedicalEquipment.Web.csproj",
+        "packagesPath": "C:\\Users\\Sara\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sara\\source\\repos\\sara1989mohammadi\\ProjectMedicalEquipment\\ProjectMedicalEquipment\\MedicalEquipment\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\ProgramData\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Seemorgh-132\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\Sara\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"

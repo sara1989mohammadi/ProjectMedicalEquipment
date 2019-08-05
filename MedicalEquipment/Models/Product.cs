@@ -36,6 +36,9 @@ namespace MedicalEquipment.Web.Models
         [Display(Name = "محصول ویژه")]
 
         public bool SpecialProduct { get; set; }
+        [Display(Name = "محصول قابل نمایش در صفحه اصلی")]
+
+        public bool ProductForDisplay { get; set; }
 
         public int Lang_Id { get; set; }
 

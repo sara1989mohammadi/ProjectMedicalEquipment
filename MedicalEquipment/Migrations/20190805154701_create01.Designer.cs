@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MedicalEquipment.Web.Migrations
 {
     [DbContext(typeof(MedicalEquipmentContext))]
-    [Migration("20190801172711_create01")]
+    [Migration("20190805154701_create01")]
     partial class create01
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -165,6 +165,8 @@ namespace MedicalEquipment.Web.Migrations
                     b.Property<int>("Lang_Id");
 
                     b.Property<int>("Price");
+
+                    b.Property<bool>("ProductForDisplay");
 
                     b.Property<string>("ProductName")
                         .IsRequired()
