@@ -13,8 +13,8 @@ body {
 }
 
 .feather {
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 30px;
     stroke: #333;
 }
 
@@ -202,3 +202,49 @@ body {
                     background-color: #f9f9f9;
                 }
 }
+
+@media (min-width: 992px) {
+  #navbar {
+    padding: 7px 0 5px;
+  }
+  .btn-toggle-menu, .mobile-nav-head {
+    display: none;
+  }
+  .dropdown-container {
+    position: inherit;
+    display: block;
+  }
+  .menu-dropdown {
+    display: flex;
+    margin: 0 10px;
+  }
+  .menu-dropdown li a {
+    padding: 8px 15px;
+    border-bottom: 1px solid transparent;
+  }
+  .btn-signin {
+    display: block;
+  }
+  .menu-right > li > a {
+    padding: 6px 15px;
+  }
+  ul.sub-menu {
+    position: absolute;
+    top: calc(100% + 5px);
+    border: 1px solid #eee;
+    transition: 0.2s;
+  }
+  ul.sub-menu li {
+    padding: 0;
+  }
+  ul.sub-menu li a {
+    padding: 12px 30px !important;
+    min-width: 200px;
+    border-bottom: 1px solid #eee;
+  }
+  ul.sub-menu li a:hover {
+    border-bottom: 1px solid transparent;
+    background-color: #f9f9f9;
+  }
+}
+
