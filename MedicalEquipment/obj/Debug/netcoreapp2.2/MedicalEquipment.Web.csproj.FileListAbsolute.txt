@@ -139,4 +139,3 @@ C:\Users\Seemorgh-132\Source\Repos\sara1989mohammadi\ProjectMedicalEquipment\Med
 C:\Users\Seemorgh-132\Source\Repos\sara1989mohammadi\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.dll
 C:\Users\Seemorgh-132\Source\Repos\sara1989mohammadi\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.pdb
 C:\Users\Seemorgh-132\Source\Repos\sara1989mohammadi\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.csproj.CopyComplete
-C:\Users\Seemorgh-132\Source\Repos\sara1989mohammadi\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.csprojAssemblyReference.cache
