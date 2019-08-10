@@ -40,13 +40,15 @@ namespace MedicalEquipment.Web.Models
 
         public bool ProductForDisplay { get; set; }
 
-        public int Lang_Id { get; set; }
 
+        [Display(Name = "زبان")]
+        public int Lang_Id { get; set; }
+     
         [ForeignKey("Lang_Id")]
         public virtual  Language Language { get; set; }
-
+        [Display(Name = "دسته بندی")]
         public int Category_Id { get; set; }
-
+       
         [ForeignKey("Category_Id")]
         public virtual Category Category { get; set; }
     }

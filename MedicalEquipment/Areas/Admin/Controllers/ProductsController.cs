@@ -33,7 +33,8 @@ namespace MedicalEquipment.Web.Areas.Admin.Controllers
             }
             else
             {
-                return View(await _context.Products.ToListAsync());
+               // return View(await _context.Products.ToListAsync());
+                return View(await (_context.Products.Include(p => p.Category).Include(p => p.Language)).ToListAsync());
             }
            
         }

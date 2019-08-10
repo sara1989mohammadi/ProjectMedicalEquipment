@@ -4,6 +4,7 @@ using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
 using MedicalEquipment.Web.Models;
+using MedicalEquipment.Web.Models.Services.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -13,6 +14,9 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MedicalEquipment.Web.Models.Services;
+using Microsoft.AspNetCore.Authentication.Cookies;
+using MedicalEquipment.Web.Models.Convertors;
 
 namespace MedicalEquipment
 {
@@ -44,6 +48,28 @@ namespace MedicalEquipment
                     options.DataAnnotationLocalizerProvider = (type, factory) =>
                         factory.Create(typeof(ShareResource));
                 });
+
+            #region Authentication
+
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultSignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+
+            }).AddCookie(options =>
+            {
+                options.LoginPath = "/Login";
+                options.LogoutPath = "/Logout";
+                options.ExpireTimeSpan = TimeSpan.FromMinutes(43200);
+
+            });
+
+            #endregion
+            #region IOC
+            services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IViewRenderService, RenderViewToString>();
+            #endregion
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -61,6 +87,7 @@ namespace MedicalEquipment
             app.UseStaticFiles();
             //app.UseMvcWithDefaultRoute();
             app.UseCookiePolicy();
+            app.UseAuthentication();
 
             var supportedCultures = new List<CultureInfo>()
             {

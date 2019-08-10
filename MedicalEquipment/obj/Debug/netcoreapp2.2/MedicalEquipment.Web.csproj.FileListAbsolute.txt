@@ -149,7 +149,6 @@ C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedi
 C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\bin\Debug\netcoreapp2.2\fa-IR\MedicalEquipment.Web.resources.dll
 C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\bin\Debug\netcoreapp2.2\MedicalEquipment.Web.Views.dll
 C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\bin\Debug\netcoreapp2.2\MedicalEquipment.Web.Views.pdb
-C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.csprojAssemblyReference.cache
 C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.Properties.Resources.resources
 C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.Resources.Views.Home.Index.en-US.resources
 C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.Resources.Views.Home.Index.fa-IR.resources
@@ -211,3 +210,11 @@ C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedi
 C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.dll
 C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.pdb
 C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.csproj.CopyComplete
+C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\Razor\Views\Account\Register.g.cshtml.cs
+C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\MedicalEquipment.Web.csprojAssemblyReference.cache
+C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\Razor\Views\Account\SuccessRegister.g.cshtml.cs
+C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\Razor\Views\Account\ActiveAccount.g.cshtml.cs
+C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ActiveEmail.g.cshtml.cs
+C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ForgotPassword.g.cshtml.cs
+C:\Users\Sara\source\repos\sara1989mohammadi\ProjectMedicalEquipment\ProjectMedicalEquipment\MedicalEquipment\obj\Debug\netcoreapp2.2\Razor\Views\Account\ForgotPassword.g.cshtml.cs

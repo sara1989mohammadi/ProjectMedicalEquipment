@@ -30,7 +30,7 @@
     <script src="~/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-
+    <link href="~/css/material-design-iconic-font.min.css" rel="stylesheet" />
     @*@foreach (var item in ViewBag.LanguageTitle)
             {
             <h1>@item</h1>
@@ -1974,15 +1974,15 @@
 <body>
 
 
-    <nav id="navbar" >
+    <nav id="navbar">
         <div class="container" style="direction:ltr">
-            <div class="nav-between" >
+            <div class="nav-between">
                 <button type="button" class="btn-toggle-menu" onclick="dropdownMenu()"><i data-feather="menu"></i></button>
                 <a href="#">
                     <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31" height="24">
                 </a>
 
-                <div class="dropdown-container" id="dropdownContainer" >
+                <div class="dropdown-container" id="dropdownContainer">
                     <div class="mobile-nav-head">
                         <span>Microsoft home</span>
                     </div>
@@ -2041,7 +2041,7 @@
 
 
 
-    
+
     <!-- #endregion Jssor Slider End -->
     <!-- End Slider Section -->
     <!-- Start Service Section -->
@@ -2321,6 +2321,9 @@
     <script src="/js/smoothscroll.min.js"></script>
     <!--Custom JavaScript for Klinik Template-->
     <script src="/js/custom.js"></script>
+    <script src="/js/jquery.validate.min.js"></script>
+    <script src="/js/jquery.validate.unobtrusive.js"></script>
+
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -2329,8 +2332,8 @@
                 m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-        ga('create', 'UA-93901876-1', 'auto');
-        ga('send', 'pageview');
+    ga('create', 'UA-93901876-1', 'auto');
+    ga('send', 'pageview');
     </script>
     <script>
         $.get("/Home/Languages", function (res) {

@@ -1,6 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MedicalEquipment",
+    "\\MedicalEquipment\\Areas"
   ],
   "SelectedNode": "\\MedicalEquipment.sln",
   "PreviewInSolutionExplorer": false

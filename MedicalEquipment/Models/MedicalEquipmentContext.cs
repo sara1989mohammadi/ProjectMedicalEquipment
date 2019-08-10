@@ -24,6 +24,7 @@ namespace MedicalEquipment.Web.Models
         public DbSet<Service> Service { get; set; }
         public DbSet<FormContact> FormContact { get; set; }
         public DbSet<FormContactModel> FormContactModel { get; set; }
+        public DbSet<User> Users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
            

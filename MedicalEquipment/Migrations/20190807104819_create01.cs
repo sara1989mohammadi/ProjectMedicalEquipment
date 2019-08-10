@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MedicalEquipment.Web.Migrations
@@ -62,6 +63,25 @@ namespace MedicalEquipment.Web.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Languages", x => x.Lang_Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Users",
+                columns: table => new
+                {
+                    UserId = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    UserName = table.Column<string>(maxLength: 200, nullable: false),
+                    Email = table.Column<string>(maxLength: 200, nullable: false),
+                    Password = table.Column<string>(maxLength: 200, nullable: false),
+                    ActiveCode = table.Column<string>(maxLength: 50, nullable: true),
+                    IsActive = table.Column<bool>(nullable: false),
+                    UserAvatar = table.Column<string>(maxLength: 200, nullable: true),
+                    RegisterDate = table.Column<DateTime>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Users", x => x.UserId);
                 });
 
             migrationBuilder.CreateTable(
@@ -277,6 +297,9 @@ namespace MedicalEquipment.Web.Migrations
 
             migrationBuilder.DropTable(
                 name: "SliderImage");
+
+            migrationBuilder.DropTable(
+                name: "Users");
 
             migrationBuilder.DropTable(
                 name: "Categories");

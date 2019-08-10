@@ -249,6 +249,39 @@ namespace MedicalEquipment.Web.Migrations
                     b.ToTable("SliderImage");
                 });
 
+            modelBuilder.Entity("MedicalEquipment.Web.Models.User", b =>
+                {
+                    b.Property<int>("UserId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("ActiveCode")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(200);
+
+                    b.Property<bool>("IsActive");
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(200);
+
+                    b.Property<DateTime>("RegisterDate");
+
+                    b.Property<string>("UserAvatar")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasMaxLength(200);
+
+                    b.HasKey("UserId");
+
+                    b.ToTable("Users");
+                });
+
             modelBuilder.Entity("MedicalEquipment.Web.Models.About", b =>
                 {
                     b.HasOne("MedicalEquipment.Web.Models.Language", "Language")
